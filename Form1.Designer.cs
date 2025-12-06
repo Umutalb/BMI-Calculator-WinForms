@@ -38,7 +38,7 @@
             lblOutput = new Label();
             lblStatus = new Label();
             btnReset = new Button();
-            linkLabel1 = new LinkLabel();
+            lblGithub = new LinkLabel();
             SuspendLayout();
             // 
             // lblTitle
@@ -147,20 +147,20 @@
             btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
             // 
-            // linkLabel1
+            // lblGithub
             // 
-            linkLabel1.ActiveLinkColor = Color.Plum;
-            linkLabel1.AutoSize = true;
-            linkLabel1.DisabledLinkColor = Color.White;
-            linkLabel1.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point, 162);
-            linkLabel1.ForeColor = SystemColors.ActiveBorder;
-            linkLabel1.Location = new Point(630, 414);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(132, 22);
-            linkLabel1.TabIndex = 10;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Umut Albayrak";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            lblGithub.ActiveLinkColor = Color.Plum;
+            lblGithub.AutoSize = true;
+            lblGithub.DisabledLinkColor = Color.White;
+            lblGithub.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point, 162);
+            lblGithub.ForeColor = SystemColors.ActiveBorder;
+            lblGithub.Location = new Point(630, 414);
+            lblGithub.Name = "lblGithub";
+            lblGithub.Size = new Size(132, 22);
+            lblGithub.TabIndex = 10;
+            lblGithub.TabStop = true;
+            lblGithub.Text = "Umut Albayrak";
+            lblGithub.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Form1
             // 
@@ -169,7 +169,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 255);
             ClientSize = new Size(774, 445);
-            Controls.Add(linkLabel1);
+            Controls.Add(lblGithub);
             Controls.Add(btnReset);
             Controls.Add(lblStatus);
             Controls.Add(lblOutput);
@@ -204,6 +204,6 @@
         private Label lblOutput;
         private Label lblStatus;
         private Button btnReset;
-        private LinkLabel linkLabel1;
+        private LinkLabel lblGithub;
     }
 }
