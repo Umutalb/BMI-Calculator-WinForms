@@ -4,7 +4,7 @@ A simple, user-friendly desktop application built with **C#** and **.NET Windows
 
 It categorizes the result (Underweight, Normal, Overweight, Obese) based on WHO standards and provides color-coded visual feedback.
 
-![App Screenshot](screenshot.png)
+![App Screenshot](screenshotDesign.png)
 
 ## 🚀 Features
 
