@@ -149,18 +149,21 @@
             // 
             // lblGithub
             // 
-            lblGithub.ActiveLinkColor = Color.Plum;
+            lblGithub.ActiveLinkColor = Color.Yellow;
             lblGithub.AutoSize = true;
-            lblGithub.DisabledLinkColor = Color.White;
-            lblGithub.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point, 162);
-            lblGithub.ForeColor = SystemColors.ActiveBorder;
-            lblGithub.Location = new Point(630, 414);
+            lblGithub.BackColor = Color.FromArgb(224, 224, 224);
+            lblGithub.DisabledLinkColor = Color.SlateBlue;
+            lblGithub.Font = new Font("Times New Roman", 13.8F, FontStyle.Italic, GraphicsUnit.Point, 162);
+            lblGithub.ForeColor = Color.SlateBlue;
+            lblGithub.LinkColor = Color.MediumSlateBlue;
+            lblGithub.Location = new Point(606, 410);
             lblGithub.Name = "lblGithub";
-            lblGithub.Size = new Size(132, 22);
+            lblGithub.Size = new Size(156, 26);
             lblGithub.TabIndex = 10;
             lblGithub.TabStop = true;
             lblGithub.Text = "Umut Albayrak";
-            lblGithub.LinkClicked += linkLabel1_LinkClicked;
+            lblGithub.VisitedLinkColor = Color.Blue;
+            lblGithub.LinkClicked += lblGithub_LinkClicked;
             // 
             // Form1
             // 

@@ -87,8 +87,10 @@ namespace BMI_Calculator
             txtHeight.Focus();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
+           
             System.Diagnostics.Process.Start(new ProcessStartInfo
             {
                 FileName = "https://github.com/Umutalb",
