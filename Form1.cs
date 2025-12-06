@@ -90,7 +90,6 @@ namespace BMI_Calculator
         private void lblGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
-           
             System.Diagnostics.Process.Start(new ProcessStartInfo
             {
                 FileName = "https://github.com/Umutalb",
