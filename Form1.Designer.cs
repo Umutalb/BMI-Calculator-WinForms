@@ -38,6 +38,7 @@
             lblOutput = new Label();
             lblStatus = new Label();
             btnReset = new Button();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // lblTitle
@@ -146,6 +147,21 @@
             btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.Plum;
+            linkLabel1.AutoSize = true;
+            linkLabel1.DisabledLinkColor = Color.White;
+            linkLabel1.Font = new Font("Times New Roman", 12F, FontStyle.Italic, GraphicsUnit.Point, 162);
+            linkLabel1.ForeColor = SystemColors.ActiveBorder;
+            linkLabel1.Location = new Point(630, 414);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(132, 22);
+            linkLabel1.TabIndex = 10;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Umut Albayrak";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // Form1
             // 
             AcceptButton = btnCalculate;
@@ -153,6 +169,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 255);
             ClientSize = new Size(774, 445);
+            Controls.Add(linkLabel1);
             Controls.Add(btnReset);
             Controls.Add(lblStatus);
             Controls.Add(lblOutput);
@@ -187,5 +204,6 @@
         private Label lblOutput;
         private Label lblStatus;
         private Button btnReset;
+        private LinkLabel linkLabel1;
     }
 }

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace BMI_Calculator
@@ -84,6 +85,15 @@ namespace BMI_Calculator
             lblOutput.Visible = false;
             lblStatus.Visible = false;
             txtHeight.Focus();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://github.com/Umutalb",
+                UseShellExecute = true
+            });
         }
     }
 }
