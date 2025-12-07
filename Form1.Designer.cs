@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblTitle = new Label();
             lblHeight = new Label();
             lblWeight = new Label();
@@ -184,10 +185,10 @@
             Controls.Add(lblHeight);
             Controls.Add(lblTitle);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             MaximizeBox = false;
             Name = "Form1";
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Body Mass Index Calculator v1.0";
             KeyDown += Form1_KeyDown;
